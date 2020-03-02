@@ -13,7 +13,7 @@ class Shimo(BasePage):
 
 
 
-    def export_fiel(self):
+    def export_file(self):
         menu_xpath = "/html/body/div[1]/div/div[1]/div[1]/div[1]/div[3]/button[3]"
         menu = self.findElement(menu_xpath)
         self.move_and_clcik(menu)

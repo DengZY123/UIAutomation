@@ -3,12 +3,12 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
+from config.config import Config
 
 class BasePage():
-    # 配置文件路径
-    profile_path = r'C:\Users\Deng\AppData\Roaming\Mozilla\Firefox\Profiles\mi7ru85h.default'
-    # 加载配置数据
-    profile = webdriver.FirefoxProfile(profile_path)
+
+    # 加载配置文件
+    profile = webdriver.FirefoxProfile(Config.profile_path)
 
     def __init__(self):
         try:
